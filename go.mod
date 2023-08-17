@@ -1,4 +1,4 @@
-module xk6-ecdh
+module https://github.com/kurobanekid/xk6-ecdh
 
 go 1.21.0
 
