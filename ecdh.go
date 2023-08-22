@@ -111,9 +111,6 @@ func (e *Ecdh) AesGcmEncrypt(plaintext, keyHex, noncePrefix, nonceSuffix string)
 	if err != nil {
 		return ""
 	}
-	fmt.Printf("key: %v\n", key)
-	fmt.Printf("nonce: %v\n", nonce)
-	fmt.Printf("plaintext: %v\n", plaintext)
 	ciphertext := AesGcmEncryptWithNonce(key, plaintext, nonce)
 	ciphertextBase64 := base64.StdEncoding.EncodeToString(ciphertext)
 
